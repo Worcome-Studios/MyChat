@@ -53,6 +53,66 @@ Namespace My
                 Return defaultInstance
             End Get
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("192.168.1.")>  _
+        Public Property IP() As String
+            Get
+                Return CType(Me("IP"),String)
+            End Get
+            Set
+                Me("IP") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("8080")>  _
+        Public Property Puerto() As String
+            Get
+                Return CType(Me("Puerto"),String)
+            End Get
+            Set
+                Me("Puerto") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property UserNameSV() As String
+            Get
+                Return CType(Me("UserNameSV"),String)
+            End Get
+            Set
+                Me("UserNameSV") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property UserNameCL() As String
+            Get
+                Return CType(Me("UserNameCL"),String)
+            End Get
+            Set
+                Me("UserNameCL") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("False")>  _
+        Public Property OfflineMode() As Boolean
+            Get
+                Return CType(Me("OfflineMode"),Boolean)
+            End Get
+            Set
+                Me("OfflineMode") = value
+            End Set
+        End Property
     End Class
 End Namespace
 
